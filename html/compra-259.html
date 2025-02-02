@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finalização de Compra - Surf Zone</title>
+    <link rel="stylesheet" href="/css/compra-259.css">
+</head>
+<body>
+    <!-- Cabeçalho -->
+    <header>
+        <h1 class="logo">Surf Zone</h1>
+        <nav>
+            <ul>
+                <li><a href="/html/produtos.html">Produtos</a></li>
+                <li><a href="index.html">Sobre Nós</a></li>
+                <li><a href="index.html">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Formulário de Finalização de Compra -->
+    <div class="container">
+        <h2>Finalização de Compra</h2>
+
+        <form id="form-compra">
+            <div class="box" id="endereco">
+                <h3>Endereço de Entrega</h3>
+                <label for="nome">Nome Completo</label>
+                <input type="text" id="nome" name="nome" required>
+
+                <label for="endereco-completo">Endereço Completo</label>
+                <input type="text" id="endereco-completo" name="endereco" required>
+
+                <label for="cep">CEP</label>
+                <input type="text" id="cep" name="cep" required>
+
+                <label for="cidade">Cidade</label>
+                <input type="text" id="cidade" name="cidade" required>
+            </div>
+
+            <div class="box" id="cartao">
+                <h3>Dados do Cartão</h3>
+                <label for="numero-cartao">Número do Cartão</label>
+                <input type="text" id="numero-cartao" name="numero-cartao" required>
+
+                <label for="nome-cartao">Nome no Cartão</label>
+                <input type="text" id="nome-cartao" name="nome-cartao" required>
+
+                <label for="validade">Data de Validade</label>
+                <input type="month" id="validade" name="validade" required>
+
+                <label for="cvv">CVV</label>
+                <input type="text" id="cvv" name="cvv" required>
+            </div>
+
+            <div class="valor">
+                <p>Valor Total: R$ <span id="valor">259,90</span></p>
+            </div>
+
+            <button type="submit">Finalizar Compra</button>
+        </form>
+    </div>
+
+    <script src="/js/compra-259.js"></script>
+</body>
+</html>
